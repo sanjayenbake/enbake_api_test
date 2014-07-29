@@ -1,0 +1,26 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: apitest_development
+  pool: 5
+  username: enbake
+  password: enbake
+  host: localhost
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: apitest_test
+  pool: 5
+  username: enbake
+  password: enbake
+  host: localhost
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: apitest_production
+  pool: 5
+  username: enbake
+  password: enbake
+  host: localhost
