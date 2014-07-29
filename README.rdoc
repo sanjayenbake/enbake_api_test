@@ -25,12 +25,15 @@ Things you may want to cover:
 Use the following curl requests to for:
 
 1) Listing the users:
+
 curl --header "Content-Type:application/json" --header "Accept:application/json" http://enbake-api-test.herokuapp.com/services/users
 
-2) Creating a user
+2) Creating a user:
+
 curl --header "Content-Type:application/json" --header "Accept:application/json" http://enbake-api-test.herokuapp.com/services/users -X POST -d '{"user": {"firstName": "Ishwinder", "lastName": "Singh", "password": "enbake123"}}'
 
-3) Deleting a user*
+3) Deleting a user*:
+
 curl --header "Content-Type:application/json" --header "Accept:application/json" http://enbake-api-test.herokuapp.com/services/users/:id -X DELETE
 
 
