@@ -22,7 +22,19 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+Use the following curl requests to for:
 
+1) Listing the users:
+curl --header "Content-Type:application/json" --header "Accept:application/json" http://enbake-api-test.herokuapp.com/services/users -X GET
+
+2) Creating a user
+curl --header "Content-Type:application/json" --header "Accept:application/json" http://enbake-api-test.herokuapp.com/services/users -X POST -d '{"user": {"firstName": "Ishwinder", "lastName": "Singh", "password": "enbake123"}}'
+
+3) Deleting a user*
+curl --header "Content-Type:application/json" --header "Accept:application/json" http://enbake-api-test.herokuapp.com/services/users/:id -X DELETE
+
+
+* Do replace the :id for delete curl request.
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
