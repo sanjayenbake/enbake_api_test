@@ -16,4 +16,18 @@ class User < ActiveRecord::Base
     write_attribute(:last_name, value)
   end
 
+private
+
+  def self.seed!
+    create(:first_name => "Joe", :last_name =>  "Cat", :password => "secret")
+    create(:first_name => "Joe", :last_name =>  "Dog", :password => "secret")
+    create(:first_name => "Joe", :last_name =>  "Emu", :password => "secret")
+    create(:first_name => "Joe", :last_name =>  "Frog", :password => "secret")
+    create(:first_name => "Joe", :last_name =>  "Gnat", :password => "secret")
+    create(:first_name => "Joe", :last_name =>  "Hog", :password => "secret")
+    create(:first_name => "Joe", :last_name =>  "Ibis", :password => "secret")
+    create(:first_name => "Joe", :last_name =>  "Joey", :password => "secret")
+    create(:first_name => "Joe", :last_name =>  "Kiwi", :password => "secret")
+  end
+
 end
